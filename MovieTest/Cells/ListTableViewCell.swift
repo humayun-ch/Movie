@@ -43,7 +43,7 @@ class ListTableViewCell: UITableViewCell {
     
     lazy var poster: UIImageView = {
         let loveicon = UIImageView()
-        loveicon.image = UIImage(named: "Square")
+        loveicon.image = UIImage(named: "empty")
         loveicon.contentMode = .scaleAspectFill
         return loveicon
     }()

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52397B3B288063E7005212A8 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52397B3A288063E7005212A8 /* Config.swift */; };
 		52F629CE287F0E98008EB4D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F629CD287F0E98008EB4D6 /* AppDelegate.swift */; };
 		52F629D0287F0E98008EB4D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F629CF287F0E98008EB4D6 /* SceneDelegate.swift */; };
 		52F629D2287F0E98008EB4D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F629D1287F0E98008EB4D6 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52397B3A288063E7005212A8 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		52F629CA287F0E98008EB4D6 /* MovieTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F629CD287F0E98008EB4D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52F629CF287F0E98008EB4D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52397B3D288067D0005212A8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52F629CD287F0E98008EB4D6 /* AppDelegate.swift */,
+				52F629CF287F0E98008EB4D6 /* SceneDelegate.swift */,
+				52F629D1287F0E98008EB4D6 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		52F629C1287F0E98008EB4D6 = {
 			isa = PBXGroup;
 			children = (
@@ -67,9 +79,7 @@
 				52F629EF287F2163008EB4D6 /* Cells */,
 				52F629EA287F210B008EB4D6 /* Model */,
 				52F629E2287F1F11008EB4D6 /* Helper */,
-				52F629CD287F0E98008EB4D6 /* AppDelegate.swift */,
-				52F629CF287F0E98008EB4D6 /* SceneDelegate.swift */,
-				52F629D1287F0E98008EB4D6 /* ViewController.swift */,
+				52397B3D288067D0005212A8 /* Controller */,
 				52F629D3287F0E98008EB4D6 /* Main.storyboard */,
 				52F629D6287F0E99008EB4D6 /* Assets.xcassets */,
 				52F629D8287F0E99008EB4D6 /* LaunchScreen.storyboard */,
@@ -83,6 +93,7 @@
 			children = (
 				52F629E3287F1F5A008EB4D6 /* Extensions.swift */,
 				52F629E7287F2062008EB4D6 /* Utility.swift */,
+				52397B3A288063E7005212A8 /* Config.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -178,6 +189,7 @@
 				52F629E8287F2062008EB4D6 /* Utility.swift in Sources */,
 				52F629D2287F0E98008EB4D6 /* ViewController.swift in Sources */,
 				52F629CE287F0E98008EB4D6 /* AppDelegate.swift in Sources */,
+				52397B3B288063E7005212A8 /* Config.swift in Sources */,
 				52F629D0287F0E98008EB4D6 /* SceneDelegate.swift in Sources */,
 				52F629E4287F1F5A008EB4D6 /* Extensions.swift in Sources */,
 			);

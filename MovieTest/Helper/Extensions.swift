@@ -110,3 +110,25 @@ extension UIImageView {
     }
 }
 
+extension UIViewController{
+    func showToast(message : String, font: UIFont = UIFont(name: "kefa", size: Utility.convertHeightMultiplier(constant: 15)) ?? UIFont(name: "kefa", size: Utility.convertHeightMultiplier(constant: 15))!) {
+        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - ((self.view.frame.width * 0.8)/2), y: self.view.frame.size.height-(35 + 10), width: self.view.frame.width * 0.8, height: 35))
+        toastLabel.backgroundColor = UIColor(hexString: "2B050C")
+        toastLabel.textColor = UIColor(hexString: "FF1946")
+        toastLabel.font = font
+        toastLabel.textAlignment = .center;
+        toastLabel.text = message
+        toastLabel.alpha = 1.0
+        toastLabel.layer.cornerRadius = 10;
+        toastLabel.adjustsFontSizeToFitWidth = true
+        toastLabel.clipsToBounds  =  true
+        self.view.addSubview(toastLabel)
+        UIView.animate(withDuration: 3.0, delay: 0.1, options: .curveEaseOut, animations: {
+            toastLabel.alpha = 0.0
+        }, completion: {(isCompleted) in
+            toastLabel.removeFromSuperview()
+        })
+    }
+}
+
+
